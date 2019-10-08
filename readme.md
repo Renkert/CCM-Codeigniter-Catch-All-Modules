@@ -11,6 +11,18 @@ I am currently in the process of coding a CRM system. When I started to code the
 * [UIKit CSS Framework](https://getuikit.com) - Learn more about UIkit
 * [CodeIgniter HMVC Modules](https://github.com/jenssegers/codeigniter-hmvc-modules) - Learn more about Jens Segers great HMVC Modules Script.
 
+
+## Installation:
+
+Download the script and keep in mind, that I reorganized the original Codeigniter structure for security reasons.
+
+**Important**: Your Web Root has to be set to the **/public** folder.
+
+#### Database:
+If you want to test Dynamic Content (Pages/Blog),
+1. Open **application/config/database.php** and enter your Database settings.
+2. Guide your Browser to: http://yourdomain/migrate/. This script will migrate the Database.
+
 ## What you can do:
 
 ### 1. Load Module Controllers
@@ -28,10 +40,14 @@ This is the basic structure of a HMVC module:
 	           /libraries
 	           /models
 
-Your url "http://yourdomain/yourmodule/" will get 
+Your url "http://yourdomain/yourmodule/" will point to your module.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+### 1. Load Application Controllers
+**************************
+
+	/application
+		/controllers
+
 
 *******************
 Server Requirements
