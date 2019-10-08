@@ -1,4 +1,4 @@
-# CCHM (Codeigniter Catchall-with-HMVC-Modules)
+# CCM (Codeigniter Catch-All-Modules)
 
 ## History
 
