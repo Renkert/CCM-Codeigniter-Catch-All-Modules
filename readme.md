@@ -49,62 +49,46 @@ Your url "http://yourdomain/yourmodule/" will point to your module.
 		/controllers
 			/start.php
 
-You can load your controller as usual. 
+You can load your controller as usual.
 
 ### 3. Load Application Controllers SEO friendly
 **************************
 
 In Codeigniter you can place your Controllers in subfolders. This is very handy
-to get SEO friendly Urls like "http://yourdomin/services/design".
+to get SEO friendly Urls like "http://yourdomain/services/design".
 
-With **CCM** you have a "CatchAll" Controller defined in yourfile  "application/config/routes.php". I name it "pages" but you change it to whatever you want. This is your "CatchAll-Controller". At the same time, you will find a directory with the same name in "application/controllers/" called "pages".
+With **CCM** you have a "CatchAll" Controller defined in "application/config/routes.php". I name it "pages" but you can change it to whatever you want. This is your "CatchAll-Controller". At the same time, you will find a directory with the same name in "application/controllers/" called "pages".
+
+**Important**: If you rename your CatchAll Controller to "whatever" in **"application/config/routes.php"**, you have use the same name for "application/controllers/whatever/".
 
 #### Advantage:
 
 1. You can create SEO friendly links like mentioned before, e.g. "http://yourdomin/services/design".
 2. CCM is searching for a controller with the name "design.php" in your directory
 
+### 4. Server Requirements
+**************************
 
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
+PHP version 5.6 or newer is recommended. I tested PHP version 7.3.8
 
 It should work on 5.3.7 as well, but we strongly advise you NOT to run
 such old versions of PHP, because of potential security and performance
 issues, as well as missing features.
 
-************
-Installation
-************
+### 5. Installation
+**************************
 
 Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
 of the CodeIgniter User Guide.
 
-*******
-License
-*******
+### 6. License
+**************************
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+MIT License
 
-*********
-Resources
-*********
+### 7. Acknowledgement & Thanks
+**************************
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+@Codeigniter, https://github.com/bcit-ci/CodeIgniter
+@UIKit 3, https://github.com/bcit-ci/CodeIgniter
+@Jens Segers, https://github.com/jenssegers/codeigniter-hmvc-modules
