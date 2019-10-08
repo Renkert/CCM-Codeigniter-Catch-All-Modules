@@ -53,7 +53,28 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+
+$server_ip	= getHostByName(getHostName());
+$domain		= $_SERVER['HTTP_HOST'];
+
+if (preg_match("/^(127\.0\.|10\.0\.).+/i", $server_ip)) {
+	define("ENVIRONMENT", "development");
+	if ( ! empty($_SERVER['HTTPS'])) {
+		define("BASEURL", "https://".$domain."/");
+	}
+	else {
+		define("BASEURL", "http://".$domain."/");
+	}
+}
+else {
+	define("ENVIRONMENT", "production");
+	if ( ! empty($_SERVER['HTTPS'])) {
+		define("BASEURL", "https://".$domain."/");
+	}
+	else {
+		define("BASEURL", "http://".$domain."/");
+	}
+}
 
 /*
  *---------------------------------------------------------------
@@ -91,13 +112,31 @@ switch (ENVIRONMENT)
 
 /*
  *---------------------------------------------------------------
+ * CCM! -> TIMEZONE
+ *---------------------------------------------------------------
+*/
+
+date_default_timezone_set('Europe/Amsterdam');
+
+/*
+ *---------------------------------------------------------------
+ * CCM! -> DIRECTORY NAMES
+ *---------------------------------------------------------------
+*/
+	$application_directory 	=	'application';
+	$system_directory		=	'system';
+
+/*
+ *---------------------------------------------------------------
  * SYSTEM DIRECTORY NAME
  *---------------------------------------------------------------
  *
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
-	$system_path = 'system';
+ 	$path 					=	'../';
+ 	$system_path 			=	$path.$system_directory;
+
 
 /*
  *---------------------------------------------------------------
@@ -114,7 +153,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = 'application';
+	$application_folder 	= 	$path.$application_directory;
 
 /*
  *---------------------------------------------------------------

@@ -47,6 +47,9 @@ Your url "http://yourdomain/yourmodule/" will point to your module.
 
 	/application
 		/controllers
+			/start.php
+
+You can load your controller as usual. 
 
 ### 3. Load Application Controllers SEO friendly
 **************************
@@ -54,7 +57,13 @@ Your url "http://yourdomain/yourmodule/" will point to your module.
 In Codeigniter you can place your Controllers in subfolders. This is very handy
 to get SEO friendly Urls like "http://yourdomin/services/design".
 
-With **
+With **CCM** you have a "CatchAll" Controller defined in yourfile  "application/config/routes.php". I name it "pages" but you change it to whatever you want. This is your "CatchAll-Controller". At the same time, you will find a directory with the same name in "application/controllers/" called "pages".
+
+#### Advantage:
+
+1. You can create SEO friendly links like mentioned before, e.g. "http://yourdomin/services/design".
+2. CCM is searching for a controller with the name "design.php" in your directory
+
 
 *******************
 Server Requirements
