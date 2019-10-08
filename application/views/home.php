@@ -104,7 +104,7 @@
 					<div class="uk-panel uk-width-1-1">
 						<div class="uk-margin" uk-scrollspy-class="" style="visibility: hidden;">
 							<a href="/themes/wordpress/2016/max/index.php?page_id=17">
-								<img data-src="<?php echo asset_url('images/UIKit3-Logo-White.svg'); ?>" width="" height="" alt="" uk-img>
+								<img data-src="<?php echo asset_url('images/CCM-Logo-Black.svg'); ?>" width="" height="" alt="" uk-img>
 							</a>
 						</div>
 					</div>
@@ -312,281 +312,79 @@
 	</div>
 
 
-<div class="uk-section-muted uk-section uk-section-large" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: 200;">
-
-
-
-
-
-	<div class="uk-container"><div class="uk-grid-margin uk-grid" uk-grid="">
-		<div class="uk-flex-auto uk-width-2-3@s uk-first-column">
-
-
-
-
-
-			<h2 class="uk-h4" uk-scrollspy-class="" style="visibility: hidden;">        Provided Services    </h2>
-
-
-
-		</div>
-
-		<div class="uk-flex-auto uk-width-1-3@s">
-
-
-
-
-
-			<div class="uk-margin uk-text-right@s" uk-scrollspy-class="" style="visibility: hidden;">
-
-
-
-
-				<a class="el-content uk-button uk-button-text" href="/themes/wordpress/2016/max/index.php?page_id=15">
-					Show all
-				</a>
-
-
-
-
-
+	<div class="uk-section-muted uk-section uk-section-large" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: 200;">
+		<div class="uk-container uk-container-expand">
+			<div class="uk-grid-margin uk-grid" uk-grid="">
+				<div class="uk-flex-auto uk-width-2-3@s uk-first-column">
+					<h2 class="uk-h4" uk-scrollspy-class="" style="visibility: hidden;"> Special Thanks to</h2>
+				</div>
+				<div class="uk-flex-auto uk-width-1-3@s">
+					<div class="uk-margin uk-text-right@s" uk-scrollspy-class="" style="visibility: hidden;"></div>
+				</div>
 			</div>
+			<div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+				<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
+					<div class="uk-margin uk-text-center">
+						<div class="uk-child-width-1-1 uk-child-width-1-5@m uk-grid-large uk-grid-match uk-grid" uk-grid>
 
-
-
-
-		</div>
-	</div><div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
-		<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
-
-
-
-
-
-			<div class="uk-margin uk-text-center">
-				<div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-large uk-grid-match uk-grid" uk-grid="">        <div class="uk-first-column">
-					<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
-
-						<div class="uk-card-media-top"><img class="el-image" alt="" data-src="/themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-01-76099bbc.jpeg" data-srcset="/themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-01-039606d4.jpeg 768w, /themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-01-76099bbc.jpeg 920w, /themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-01-6346a597.jpeg 960w" data-sizes="(min-width: 920px) 920px" data-width="920" data-height="1167" uk-img="" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;920&quot; height=&quot;1167&quot;&gt;&lt;/svg&gt;"></div>
-						<div class="uk-card-body uk-margin-remove-first-child">
-
-
-							<h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        Photography                    </h3>
-
-
-
-
-
-
-
-						</div>
-
-
-					</a></div>
-					<div>
-						<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
-
-							<div class="uk-card-media-top"><img class="el-image" alt="" data-src="/themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-02-4e3210cf.jpeg" data-srcset="/themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-02-59d9f7bf.jpeg 768w, /themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-02-4e3210cf.jpeg 920w, /themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-02-cc000df1.jpeg 960w" data-sizes="(min-width: 920px) 920px" data-width="920" data-height="1167" uk-img="" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;920&quot; height=&quot;1167&quot;&gt;&lt;/svg&gt;"></div>
-							<div class="uk-card-body uk-margin-remove-first-child">
-
-
-								<h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        Design &amp; Branding                    </h3>
-
-
-
-
-
-
-
+							<div class="uk-first-column">
+								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
+									<div class="uk-card-media-top">
+										<img data-src="<?php echo asset_url('images/Codeigniter-Logo-Col.svg'); ?>" width="100px" height="" alt="" uk-img>
+									</div>
+									<div class="uk-card-body uk-margin-remove-first-child">
+										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">Codeigniter</h3>
+									</div>
+								</a>
 							</div>
 
+							<div>
+								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
+									<div class="uk-card-media-top">
+										<img data-src="<?php echo asset_url('images/UIKit3-Logo-Black.svg'); ?>" width="100px" height="" alt="" uk-img>
+									</div>
+									<div class="uk-card-body uk-margin-remove-first-child">
+										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">UIKit3</h3>
+									</div>
+								</a>
+							</div>
 
-						</a></div>
-						<div>
-							<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
+							<div>
+								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
+									<div class="uk-card-media-top">
+										<img data-src="<?php echo asset_url('images/UIKit3-Logo-Black.svg'); ?>" width="100px" height="" alt="" uk-img>
+									</div>
+									<div class="uk-card-body uk-margin-remove-first-child">
+										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">UIKit3</h3>
+									</div>
+								</a>
+							</div>
 
-								<div class="uk-card-media-top"><img class="el-image" alt="" data-src="/themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-03-ef0b9421.jpeg" data-srcset="/themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-03-d933a559.jpeg 768w, /themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-03-ef0b9421.jpeg 920w, /themes/wordpress/2016/max/wp-content/themes/yootheme/cache/home-services-03-a93d95d3.jpeg 960w" data-sizes="(min-width: 920px) 920px" data-width="920" data-height="1167" uk-img="" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;920&quot; height=&quot;1167&quot;&gt;&lt;/svg&gt;"></div>
-								<div class="uk-card-body uk-margin-remove-first-child">
+							<div>
+								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
+									<div class="uk-card-media-top">
+										<img data-src="<?php echo asset_url('images/UIKit3-Logo-Black.svg'); ?>" width="100px" height="" alt="" uk-img>
+									</div>
+									<div class="uk-card-body uk-margin-remove-first-child">
+										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">UIKit3</h3>
+									</div>
+								</a>
+							</div>
 
+							<div>
+								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
+									<div class="uk-card-media-top">
+										<img data-src="<?php echo asset_url('images/UIKit3-Logo-Black.svg'); ?>" width="100px" height="" alt="" uk-img>
+									</div>
+									<div class="uk-card-body uk-margin-remove-first-child">
+										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">UIKit3</h3>
+									</div>
+								</a>
+							</div>
 
-									<h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        Web Design                    </h3>
-
-
-
-
-
-
-
-								</div>
-
-
-							</a></div>
 						</div>
-
 					</div>
-
-
-
-
 				</div>
-			</div></div>
-
-
-
+			</div>
 		</div>
-
-		<div class="uk-section-default uk-section uk-section-large">
-
-
-
-
-
-			<div class="uk-container"><div class="uk-grid-margin uk-grid" uk-grid="">
-				<div class="uk-flex-auto uk-width-1-4@m uk-width-1-2@s uk-first-column">
-
-
-
-
-
-					<h3 class="uk-h4">        My Awesome Clients    </h3>
-
-
-
-				</div>
-
-				<div class="uk-flex-auto uk-width-1-4@m uk-width-1-2@s">
-
-
-
-
-
-					<h3 class="uk-h4">        North America    </h3><div class="uk-hr"></div>
-					<ul class="uk-list">        <li class="el-item">
-						<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Perkins &amp; Co.</a></div></li>
-						<li class="el-item">
-							<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">NCWBC Network</a></div></li>
-							<li class="el-item">
-								<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Happy Kids Organisation</a></div></li>
-							</ul>
-
-
-
-
-						</div>
-
-						<div class="uk-flex-auto uk-width-1-4@m uk-width-1-2@s">
-
-
-
-
-
-							<h3 class="uk-h4">        Europe    </h3><div class="uk-hr"></div>
-							<ul class="uk-list">        <li class="el-item">
-								<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Sweden Airlines</a></div></li>
-								<li class="el-item">
-									<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Miami Fitness Studios</a></div></li>
-									<li class="el-item">
-										<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">McGyver Streetwear</a></div></li>
-										<li class="el-item">
-											<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Cargo Nets Co.</a></div></li>
-											<li class="el-item">
-												<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Rides &amp; Boards</a></div></li>
-												<li class="el-item">
-													<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Chitter Chatter</a></div></li>
-												</ul>
-
-
-
-
-											</div>
-
-											<div class="uk-flex-auto uk-width-1-4@m uk-width-1-2@s">
-
-
-
-
-
-												<h3 class="uk-h4">        Rest Of The World    </h3><div class="uk-hr"></div>
-												<ul class="uk-list">        <li class="el-item">
-													<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Actively Learn</a></div></li>
-													<li class="el-item">
-														<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Japanese Arts Academy</a></div></li>
-														<li class="el-item">
-															<div class="el-content uk-panel"><a href="#" uk-scroll="" class="el-link uk-link-reset">Pacific Trade Company</a></div></li>
-														</ul>
-
-
-
-
-													</div>
-												</div></div>
-
-
-
-											</div>
-
-											<div class="uk-section-primary uk-section uk-section-large">
-
-
-
-
-
-												<div class="uk-container"><div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
-													<div class="uk-flex-auto uk-width-1-1@m uk-first-column">
-
-
-
-
-
-														<h1 class="uk-text-left">        Work with me!    </h1>
-
-
-
-													</div>
-												</div><div class="uk-grid-margin uk-grid" uk-grid="">
-													<div class="uk-flex-auto uk-width-2-3@m uk-first-column">
-
-
-
-
-														<div class="uk-text-lead uk-margin uk-text-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</div>
-
-
-
-													</div>
-
-													<div class="uk-flex-auto uk-width-1-3@m">
-
-
-
-
-
-														<div class="uk-margin-medium uk-text-center">
-
-
-
-
-															<a class="el-content uk-button uk-button-default" href="/themes/wordpress/2016/max/index.php?page_id=15">
-																Get in touch
-															</a>
-
-
-
-
-
-														</div>
-
-
-
-
-													</div>
-												</div></div>
-
-
-
-											</div>
-											<style>#page\#24 {     background-color: #26c280; } </style>
-
-											<!-- Builder #footer -->
-
-								</div>
+	</div>
