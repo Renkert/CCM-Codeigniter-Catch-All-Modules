@@ -328,58 +328,103 @@
 						<div class="uk-child-width-1-1 uk-child-width-1-5@m uk-grid-large uk-grid-match uk-grid" uk-grid>
 
 							<div class="uk-first-column">
-								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
-									<div class="uk-card-media-top">
-										<img data-src="<?php echo asset_url('images/Codeigniter-Logo-Col.svg'); ?>" width="100px" height="" alt="" uk-img>
+								<div class="uk-card uk-card-default">
+									<div class="uk-card-header">
+										<div class="uk-grid-small uk-flex-middle" uk-grid>
+											<div class="uk-width-expand">
+												<h3 class="uk-card-title uk-margin-remove-bottom">CODEIGNITER</h3>
+												<p>PHP FRAMEWORK</p>
+											</div>
+										</div>
 									</div>
-									<div class="uk-card-body uk-margin-remove-first-child">
-										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">Codeigniter</h3>
+									<div class="uk-card-body">
+										<p class="uk-text-small">Copyright (c) 2014 - 2019, British Columbia Institute of Technology</p>
+										<p class="uk-text-small">The MIT License (MIT)</p>
 									</div>
-								</a>
+									<div class="uk-card-footer">
+										<a target="_blank" href="https://codeigniter.com" class="uk-button uk-button-text">Visit Website</a>
+									</div>
+								</div>
 							</div>
 
 							<div>
-								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
-									<div class="uk-card-media-top">
-										<img data-src="<?php echo asset_url('images/UIKit3-Logo-Black.svg'); ?>" width="100px" height="" alt="" uk-img>
+								<div class="uk-card uk-card-default">
+									<div class="uk-card-header">
+										<div class="uk-grid-small uk-flex-middle" uk-grid>
+											<div class="uk-width-expand">
+												<h3 class="uk-card-title uk-margin-remove-bottom">UIKIT 3</h3>
+												<p>CSS FRAMEWORK</p>
+											</div>
+										</div>
 									</div>
-									<div class="uk-card-body uk-margin-remove-first-child">
-										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">UIKit3</h3>
+									<div class="uk-card-body">
+										<p class="uk-text-small">Copyright (c) 2013-2019 YOOtheme GmbH, getuikit.com</p>
+										<p class="uk-text-small">The MIT License (MIT)</p>
 									</div>
-								</a>
+									<div class="uk-card-footer">
+										<a target="_blank" href="https://getuikit.com" class="uk-button uk-button-text">Visit Website</a>
+									</div>
+								</div>
 							</div>
 
 							<div>
-								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
-									<div class="uk-card-media-top">
-										<img data-src="<?php echo asset_url('images/UIKit3-Logo-Black.svg'); ?>" width="100px" height="" alt="" uk-img>
+								<div class="uk-card uk-card-default">
+									<div class="uk-card-header">
+										<div class="uk-grid-small uk-flex-middle" uk-grid>
+											<div class="uk-width-expand">
+												<h3 class="uk-card-title uk-margin-remove-bottom">JENS SEGERS</h3>
+												<p>HMVC MODULES</p>
+											</div>
+										</div>
 									</div>
-									<div class="uk-card-body uk-margin-remove-first-child">
-										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">UIKit3</h3>
+									<div class="uk-card-body">
+										<p class="uk-text-small">Copyright (c) 2012 Jens Segers</p>
+										<p class="uk-text-small">The MIT License (MIT)</p>
 									</div>
-								</a>
+									<div class="uk-card-footer">
+										<a target="_blank" href="https://github.com/jenssegers/codeigniter-hmvc-modules" class="uk-button uk-button-text">Visit Website</a>
+									</div>
+								</div>
 							</div>
 
 							<div>
-								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
-									<div class="uk-card-media-top">
-										<img data-src="<?php echo asset_url('images/UIKit3-Logo-Black.svg'); ?>" width="100px" height="" alt="" uk-img>
+								<div class="uk-card uk-card-default">
+									<div class="uk-card-header">
+										<div class="uk-grid-small uk-flex-middle" uk-grid>
+											<div class="uk-width-expand">
+												<h3 class="uk-card-title uk-margin-remove-bottom">ALRRA</h3>
+												<p>BROWSER LOGOS</p>
+											</div>
+										</div>
 									</div>
-									<div class="uk-card-body uk-margin-remove-first-child">
-										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">UIKit3</h3>
+									<div class="uk-card-body">
+										<p class="uk-text-small">Copyright (c) Cătălin Mariș</p>
+										<p class="uk-text-small">The MIT License (MIT)</p>
 									</div>
-								</a>
+									<div class="uk-card-footer">
+										<a target="_blank" href="https://github.com/alrra/browser-logos" class="uk-button uk-button-text">Visit Website</a>
+									</div>
+								</div>
 							</div>
 
 							<div>
-								<a class="el-item uk-card uk-card-default uk-card-hover uk-display-block uk-link-toggle" href="/themes/wordpress/2016/max/index.php?page_id=15" uk-scrollspy-class="" style="visibility: hidden;">
-									<div class="uk-card-media-top">
-										<img data-src="<?php echo asset_url('images/UIKit3-Logo-Black.svg'); ?>" width="100px" height="" alt="" uk-img>
+								<div class="uk-card uk-card-default">
+									<div class="uk-card-header">
+										<div class="uk-grid-small uk-flex-middle" uk-grid>
+											<div class="uk-width-expand">
+												<h3 class="uk-card-title uk-margin-remove-bottom">PEXELS</h3>
+												<p>IMAGES</p>
+											</div>
+										</div>
 									</div>
-									<div class="uk-card-body uk-margin-remove-first-child">
-										<h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">UIKit3</h3>
+									<div class="uk-card-body">
+										<p class="uk-text-small">Copyright (c) J. Kelly Brito at Pexels</p>
+										<p class="uk-text-small">The MIT License (MIT)</p>
 									</div>
-								</a>
+									<div class="uk-card-footer">
+										<a target="_blank" href="https://www.pexels.com" class="uk-button uk-button-text">Visit Website</a>
+									</div>
+								</div>
 							</div>
 
 						</div>

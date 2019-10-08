@@ -4,7 +4,7 @@
 
 /**
 * Template Library
-* Not really a library, just a builder to easy get some content
+* Not really a library, just a builder to get some content short and dirty
 *
 * @package  	application\libraries\Template.php
 * @category		Library
@@ -19,11 +19,17 @@
 
 class Template
 {
+	/**
+	 * if the view files should reside in a subfolder of /application/views
+	 *
+	 * @var string
+	 */
+	public $view_folder 		= 'content';
 
-    public function render( $view = NULL, $_layout = NULL, $_data = array() ) {
-        $data['view']			= $view;
-        $data['head'] 			= "includes/topbar";
-        $data['left_menu'] 		= "includes/left_menu";
+
+
+    public function render( $_view = NULL, $_layout = NULL, $_data = array() ) {
+        $data['view']			= isset( $this->view_folder ) ? $this->view_folder . '/' .$_view : $_view;
         $data 					= array_merge($data, $_data);
 		$layout 				= isset( $_layout ) ? $_layout : 'index';
         ci()->load->view('layouts/' . $layout, $data);

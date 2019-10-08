@@ -1,4 +1,4 @@
-<div class="tm-header-mobile uk-hidden@m">
+<div class="uk-hidden@m">
 	<div class="uk-navbar-container">
 		<nav uk-navbar="" class="uk-navbar">
 			<div class="uk-navbar-left">
@@ -8,14 +8,14 @@
 			</div>
 
 			<div class="uk-navbar-right">
-				<a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle="">
+				<a class="uk-navbar-toggle" href="#nav-mobile" uk-toggle="">
 					<div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon"></div>
 				</a>
 			</div>
 		</nav>
 	</div>
 
-	<div id="tm-mobile" class="uk-modal-full uk-modal" uk-modal="">
+	<div id="nav-mobile" class="uk-modal-full uk-modal" uk-modal>
 		<div class="uk-modal-dialog uk-modal-body uk-text-center uk-flex uk-height-viewport">
 			<button class="uk-modal-close-full uk-icon uk-close" type="button" uk-close=""></button>
 			<div class="uk-margin-auto-vertical uk-width-1-1">
@@ -67,6 +67,9 @@
 						<ul class="uk-navbar-nav">
 							<li>
 								<a href="<?php echo base_url(); ?>">Home</a></li>
+							<li>
+							<li>
+								<a href="<?php echo base_url('docs'); ?>">Docs</a></li>
 							<li>
 							<li>
 								<a href="<?php echo base_url('controller'); ?>">Controller</a></li>
