@@ -66,8 +66,7 @@ With **CCM** you have a "CatchAll" Controller defined in "application/config/rou
 1. You can create SEO friendly links like mentioned before, e.g. "http://yourdomin/services/design".
 2. CCM is searching for a controller with the name "design.php" in your directory
 
-### 4. Server Requirements
-**************************
+## Server Requirements
 
 PHP version 5.6 or newer is recommended. I tested PHP version 7.3.8
 
@@ -75,21 +74,13 @@ It should work on 5.3.7 as well, but we strongly advise you NOT to run
 such old versions of PHP, because of potential security and performance
 issues, as well as missing features.
 
-### 5. Installation
-**************************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-### 6. License
-**************************
+## License
 
 MIT License
 
-### 7. Acknowledgement & Thanks
-**************************
+## Acknowledgement & Thanks
 
 * @Codeigniter, https://github.com/bcit-ci/CodeIgniter
 * @UIKit 3, https://github.com/uikit/uikit
 * @Jens Segers, https://github.com/jenssegers/codeigniter-hmvc-modules
-* @Cătălin Mariș, https://github.com/alrra/browser-logos 
+* @Cătălin Mariș, https://github.com/alrra/browser-logos
