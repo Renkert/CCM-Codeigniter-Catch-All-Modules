@@ -1,4 +1,4 @@
-# Catchall-with-HMVC-Modules
+# CCHM (Codeigniter Catchall-with-HMVC-Modules)
 
 ## History
 
@@ -42,12 +42,19 @@ This is the basic structure of a HMVC module:
 
 Your url "http://yourdomain/yourmodule/" will point to your module.
 
-### 1. Load Application Controllers
+### 2. Load Application Controllers
 **************************
 
 	/application
 		/controllers
 
+### 3. Load Application Controllers SEO friendly
+**************************
+
+In Codeigniter you can place your Controllers in subfolders. This is very handy
+to get SEO friendly Urls like "http://yourdomin/services/design".
+
+With **
 
 *******************
 Server Requirements
