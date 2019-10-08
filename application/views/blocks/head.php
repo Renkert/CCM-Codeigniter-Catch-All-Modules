@@ -13,7 +13,7 @@
 		<link rel="apple-touch-icon" href="<?php echo asset_url('img/apple-touch-icon.png'); ?>">
 
 		<!-- Stylesheets -->
-        <link rel="stylesheet" href="<?php echo asset_url('css/uikit.min.css'); ?>">
+        <link rel="stylesheet" href="<?php echo asset_url('css/uikit.miniloop.min.css'); ?>">
 
 		<!-- Javascript -->
 		<script src="<?php echo asset_url('js/uikit.min.js'); ?>"></script>

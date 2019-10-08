@@ -53,7 +53,7 @@
 	</div>
 
 
-	<div class="uk-visible@m uk-background-secondary" uk-header>
+	<div class="uk-visible@m uk-background-primary" uk-header>
 		<div media="@m" show-on-up="" animation="uk-animation-slide-top" cls-active="uk-navbar-sticky, uk-background-secondary" sel-target=".uk-navbar-container" uk-sticky>
 			<div class="uk-navbar-container uk-navbar-transparent uk-light">
 				<div class="uk-container">
