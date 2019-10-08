@@ -1,25 +1,34 @@
-###################
-What is Catchall-with-HMVC-Modules
-###################
+# Catchall-with-HMVC-Modules
+
+## History
 
 I am currently in the process of coding a CRM system. When I started to code the modules
 "BLOG" and "WEBPAGE", I noticed that I lacked some features around dynamic web pages, e.g. from a database.
 
-*******************
-Scripts included:
-*******************
+## Links/Scripts:
 
-*******************
-Release Information
-*******************
+* [Codeigniter 3 PHP Framework](https://codeigniter.com) - Learn more about Codeigniter
+* [UIKit CSS Framework](https://getuikit.com) - Learn more about UIkit
+* [CodeIgniter HMVC Modules](https://github.com/jenssegers/codeigniter-hmvc-modules) - Learn more about Jens Segers great HMVC Modules Script.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## What you can do:
 
+### 1. Load Module Controllers
 **************************
-Changelog and New Features
-**************************
+
+This is the basic structure of a HMVC module:
+
+	/application
+	    /modules
+	        /yourmodule
+	           /controllers
+	           /config
+	           /helpers
+	           /language
+	           /libraries
+	           /models
+
+Your url "http://yourdomain/yourmodule/" will get 
 
 You can find a list of all changes for each release in the `user
 guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
