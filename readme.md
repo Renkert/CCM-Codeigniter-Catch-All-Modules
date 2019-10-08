@@ -89,6 +89,7 @@ MIT License
 ### 7. Acknowledgement & Thanks
 **************************
 
-@Codeigniter, https://github.com/bcit-ci/CodeIgniter
-@UIKit 3, https://github.com/bcit-ci/CodeIgniter
-@Jens Segers, https://github.com/jenssegers/codeigniter-hmvc-modules
+* @Codeigniter, https://github.com/bcit-ci/CodeIgniter
+* @UIKit 3, https://github.com/uikit/uikit
+* @Jens Segers, https://github.com/jenssegers/codeigniter-hmvc-modules
+* @Cătălin Mariș, https://github.com/alrra/browser-logos 

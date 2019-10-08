@@ -205,76 +205,25 @@ class MY_Loader extends CI_Loader
      * @param	bool
      * @return	void
      */
-    public function view($view, $vars = array(), $return = FALSE)
-	{
-        // Detect module
-        if (list($module, $class) = $this->detect_module($view))
-		{
-			// Module: about Class: developer/modalform
-
-			// Module already loaded
-			if (in_array($module, $this->_ci_modules))
-			{
-				if(Modules::view_exists($class, $module)) {
-					// Let parent do the heavy work
-					if (Template::$debug) { log_message('info', "++++ APP_LOADER -> view || Module IS loaded, View exists -> Module: ".$module." Class: ".$class); }
-					return parent::view($class, $vars, $return);
-				}
-				//--> Check if View exists in Context folder
-				if(Modules::view_exists($module.'/'.$class, $module)) {
-					// Let parent do the heavy work
-					if (Template::$debug) { log_message('info', "++++ APP_LOADER -> view || Module IS loaded, View exists -> Module: ".$module." Class: ".$module.'/'.$class); }
-					return parent::view($module.'/'.$class, $vars, $return);
-					//$void = parent::view($module.'/'.$class, $vars, $return);
-				}
+	public function view($view, $vars = array(), $return = FALSE) {
+		//--> Detect module
+		if (list($module, $class) = $this->detect_module($view)) {
+			//--> Module already loaded
+			if (in_array($module, $this->_ci_modules)) {
+				return parent::view($class, $vars, $return);
 			}
-			else
-			{
-				// Add module
-	            $this->add_module($module);
-
-				/*
-				if($module =='about'){
-					echo($class);
-				}
-				*/
-
-				//--> Check if View exist
-				if( Modules::view_exists($class, $module)) {
-					// Let parent do the heavy work
-					log_message('info', "++++ APP_LOADER 1 -> view || Module NOT loaded, View exists -> Module: ".$module." Class: ".$class);
-					$return = TRUE;
-					$void 	= parent::view($class, $vars, $return);
-				}
-				//--> Check if View exists in Context folder
-				if( Modules::view_exists($module.'/'.$class, $module)) {
-					// Let parent do the heavy work
-					log_message('info', "++++ APP_LOADER 2 -> view || Module NOT loaded, View exists -> Module: ".$module." Class: ".$module.'/'.$class);
-					$return = TRUE;
-					$void 	= parent::view($module.'/'.$class, $vars, $return);
-				}
-				//--> Check if View exists in View folder
-				if( Modules::standard_view_exists( $view, $return = FALSE )) {
-					// Let parent do the heavy work
-					log_message('info', "++++ APP_LOADER 3 -> view || Module loaded, but View exists in VIEW FOLDER");
-					$return 	= TRUE;
-					$load_view 	= Modules::standard_view_exists( $view, TRUE ).$view;
-					$void 		= parent::view($load_view, $vars, $return);
-				}
-
-	            // Remove module
-	            $this->remove_module();
-				return $void;
-			}
-        }
-		else
-		{
-			if (Template::$debug) {
-				log_message('info', "++++ APP_LOADER -> view || View is module independent, View exists -> {$view}");
-			}
-            return parent::view($view, $vars, $return);
-        }
-    }
+			//--> Add module
+			$this->add_module($module);
+			//-->Let parent do the heavy work
+			$void = parent::view($class, $vars, $return);
+			//--> Remove module
+			$this->remove_module();
+			return $void;
+		}
+		else {
+			return parent::view($view, $vars, $return);
+		}
+	}
 
     /**
      * Loads a config file
