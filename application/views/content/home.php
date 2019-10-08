@@ -418,8 +418,8 @@
 										</div>
 									</div>
 									<div class="uk-card-body">
-										<p class="uk-text-small">Copyright (c) J. Kelly Brito at Pexels</p>
-										<p class="uk-text-small">The MIT License (MIT)</p>
+										<p class="uk-text-small">Copyright (c) J. Kelly Brito</p>
+										<p class="uk-text-small">Copyright (c) Markus Spiske temporausch.com</p>
 									</div>
 									<div class="uk-card-footer">
 										<a target="_blank" href="https://www.pexels.com" class="uk-button uk-button-text">Visit Website</a>

@@ -17,12 +17,12 @@
 
 
 
-class Controller extends MY_Controller
+class Tests extends MY_Controller
 {
 
 	public function index()
 	{
-		$this->template->render('home');
+		$this->template->render('tests');
 	}
 
 }

@@ -66,43 +66,16 @@
 					<div class="uk-navbar-center">
 						<ul class="uk-navbar-nav">
 							<li>
-								<a href="<?php echo base_url(); ?>">Home</a></li>
-							<li>
-							<li>
-								<a href="<?php echo base_url('docs'); ?>">Docs</a></li>
-							<li>
-							<li>
-								<a href="<?php echo base_url('controller'); ?>">Controller</a></li>
-							<li>
-								<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=13">Work</a>
+								<a href="<?php echo base_url(); ?>">Home</a>
 							</li>
 							<li>
-								<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=18">Branding</a>
+								<a href="<?php echo base_url('docs'); ?>">Docs</a>
 							</li>
 							<li>
-								<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=14">About</a>
+								<a href="<?php echo base_url('controller'); ?>">Controller</a>
 							</li>
 							<li>
-								<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=15">Services</a>
-							</li>
-							<li>
-								<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=66">Blog</a>
-							</li>
-							<li class="uk-parent"><a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=158">Shop</a>
-								<div class="uk-navbar-dropdown uk-animation-fade uk-animation-enter uk-navbar-dropdown-dropbar">
-									<div class="uk-navbar-dropdown-grid uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid>
-										<div class="uk-first-column">
-											<ul class="uk-nav uk-navbar-dropdown-nav">
-												<li>
-													<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=159">Cart</a>
-												</li>
-												<li>
-													<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=161">My account</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+								<a href="<?php echo base_url('tests'); ?>">Tests</a>
 							</li>
 						</ul>
 					</div>

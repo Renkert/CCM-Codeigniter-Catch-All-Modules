@@ -2,10 +2,28 @@
 
 
 
-
-
-
-
+/**
+*
+* @package  	application\core\MY_Router.php
+* @category		Core
+* @author		EstateDesign DevTeam | Rüdiger Renkert - renkert.net
+* @link			https://renkert.net
+* @copyright	renkert.net | CCM! | Rüdiger Renkert
+* @version		1.0.0
+*
+* Inspired by:
+*
+* @package		CodeIgniter HMVC Modules
+* @author		Jens Segers
+* @link			http://www.jenssegers.be
+* @license		MIT License Copyright (c) 2012 Jens Segers
+*
+* @author      hArpanet
+* @link        http://harpanet.com
+*              Updated for CI 3.0-dev.
+*              Added _set_default_controller() to allow default_controller
+*              (specified in config/routes.php) to reside in a module of the same name.
+*/
 
 class MY_Router extends CI_Router
 {
@@ -253,14 +271,6 @@ class MY_Router extends CI_Router
         }
 
 		//--> Root / Pages folder controller?
-		/*
-        if (is_file(APPPATH . 'controllers/'. $this->catch_controller.'/' . ucfirst($module) . '.php')) {
-			$this->directory = $this->catch_controller.'/';
-			echo $debug;
-            return $segments;
-        }
-		*/
-
 		$number = count($segments);
 		$count	= $number;
 
@@ -273,13 +283,10 @@ class MY_Router extends CI_Router
 					$this->directory 	= $this->catch_controller.'/';
 					$segments[0] 		= $segments[$count];
 					$debug .= 'Count: '. $count .'<br>';
-					//echo $debug;
 		            return array_slice($segments, $count);
 		        }
 			}
 		}
-
-
 
         //--> Sub-directory controller?
         if ($directory && is_file(APPPATH . 'controllers/' . $module . '/' . ucfirst($directory) . '.php')) {
@@ -293,24 +300,6 @@ class MY_Router extends CI_Router
             return $segments;
         }
     }
-
-	/**
-     * Set the module name
-     *
-     * @param	string
-     * @return	void
-     */
-    private function load_routes() {
-		// Load the routes.php file.
-		if ( file_exists(APPPATH.'config/routes.php') ) {
-			include(APPPATH.'config/routes.php');
-		}
-		if (file_exists(APPPATH.'config/'.ENVIRONMENT.'/routes.php')) {
-			include(APPPATH.'config/'.ENVIRONMENT.'/routes.php');
-		}
-    }
-
-
 
     /**
      * Set the module name
