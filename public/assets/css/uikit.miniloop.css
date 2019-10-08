@@ -4113,7 +4113,7 @@ ul.uk-nav-sub {
  * Nav items
  */
 .uk-navbar-nav > li > a {
-  color: #868585;
+  color: #404040;
   text-transform: none;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;

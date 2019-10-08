@@ -1,5 +1,5 @@
 <?php $this->load->view('blocks/head'); ?>
-
+<?php $this->load->view('blocks/header'); ?>
 <?php
 if (isset($view) && $view != "") {
 	$this->load->view($view);
