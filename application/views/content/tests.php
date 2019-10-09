@@ -15,44 +15,13 @@
     </div>
 </div>
 
-<div class="uk-section-secondary uk-padding-remove">
-	<div class="uk-container uk-light uk-padding-small">
-		<button href="#toggle-animation" class="uk-button uk-button-default uk-margin-small" type="button" uk-toggle="target: #table-of-content; animation: uk-animation-fade">Table of Content</button>
-	</div>
-</div>
-<div id="table-of-content" class="uk-section-muted" hidden>
-	<div  class="uk-container uk-padding">
-		<div class="uk-flex uk-flex-center">
-			<div class="uk-card uk-card-default uk-card-body">
-				<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default uk-nav-parent-icon">
-					<li class="uk-active"><a href="#usage">Usage</a></li>
-					<li class="uk-nav-divider"></li>
-					<li class=""><a href="#divider-modifier">Divider modifier</a></li>
-					<li class=""><a href="#pill-modifier">Pill modifier</a></li>
-
-
-				</ul>
-			</div>
-			<div class="uk-card uk-card-default uk-card-body uk-margin-left">
-
-			</div>
-			<div class="uk-card uk-card-default uk-card-body uk-margin-left">
-
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
 <div class="uk-section uk-padding-remove">
 	<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-navbar-transparent; cls-inactive: uk-navbar-transparent uk-light; bottom: #offset">
 		<div class="uk-background-primary">
 			<div class="uk-container uk-light">
 				<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 					<div class="uk-navbar-left">
-						<ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+						<ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 50">
 							<li><a href="#">Cases: </a></li>
 							<li><a href="#controller">Controller</a></li>
 							<li><a href="#modules">Modules</a></li>
@@ -65,334 +34,134 @@
 	</div>
 </div>
 
-<div class="uk-section uk-padding-remove">
+<div id="controller" class="uk-section uk-padding-remove">
 	<div class="uk-container uk-padding">
-		<h3 id="introduction">Introduction</h3>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-	</div>
-	<div class="uk-container uk-padding">
-		<h3 id="codeigniter" class="uk-h3">Codeigniter Changes</h3>
-		<p>If you are familiar with Codeigniter, you will find nothing special here, otherwise you should understand what I have done.
+		<h2>Call a Controller</h2>
+		<p>The controller is located at <code>/application/pages/</code> and called <code>Projects.php</code>
 
-		<h5 class="uk-h5 uk-text-bold">1 - New Structure</h5>
-		<p>
-			Nothing special here. I created a new <code>public</code> folder and moved the <code>index.php</code>
-			file into <code>/public</code>
-			The directory structure should look like:
-		</p>
-<pre>
-	/root
-		/application
-		/public
-			-index.php
-		/system
-</pre>
-
-
-		<h5 class="uk-h5 uk-text-bold">2 - Public Folder</h5>
-		<p>
-			The <code>/public</code> directory holds now the <code>index.php</code> file, thats
-			why your server should point to the <code>/public</code> folder.
-		</p>
-		<p>
-			Within this folder I placed another new folder called <code>/assets</code>.
-			That makes it easy to load all needed asset files. This asset directory looks like:
-		</p>
-<pre>
-	/root
-		/application
-		/public
-			/assets
-				/css
-				/images
-				/img
-				/js
-			-index.php
-		/system
-</pre>
-		<p>
-			It's easy now to use a helper function to load what we need, I will
-			explain it later.
-		</p>
-
-		<h5 class="uk-h5 uk-text-bold">3 - index.php</h5>
-		<p>
-			Now Codeigniter should know, where to find what. Therefore I had to make
-			some changes in the <code>/public/index.php</code> file.
-		</p>
-<pre>
-	$application_directory 	=	'application';
-	$system_directory		=	'system';
-
-	$path 					=	'../';
- 	$system_path 			=	$path.$system_directory;
-
-	$application_folder 	= 	$path.$application_directory;
-</pre>
-		<p>
-			If you expect the <code>/public/index.php</code> file you will see, that
-			I define the constant BASEURL at the beginning of the file.
-		</p>
-		<p>
-			You don't have to change or set anything in your <code>/application/config/config.php</code>
-			file, because your config setting <code>$config['base_url']</code> is set automatically.
-<pre>
-	$config['base_url'] 	= BASEURL;
-</pre>
-		</p>
-
-		<h5 class="uk-h5 uk-text-bold">4 - autoload.php</h5>
-		<p>
-			In the config file <code>/application/config/autoload.php</code>
-			I load the following files:
-		</p>
-<pre>
-	$autoload['libraries'] = array('Template');
-	$autoload['helper'] = array('url','app');
-</pre>
-
-		<h5 class="uk-h5 uk-text-bold">5 - .htaccess</h5>
-		<p>
-			To get clean urls, I changed in <code>/application/config/config.php</code>
-			the value <code>$config['index_page']</code> in line 38.
-<pre>
-	$config['index_page'] 	= '';
-</pre>
-			Now I created in directory <code>/public/</code> the <code>.htaccess</code>
-			file:
-<pre>
-	RewriteEngine On
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^(.*)$ index.php/$1 [L]
-</pre>
-		</p>
-		<div class="uk-margin uk-text-right@m">
-			<a href="#" class="uk-icon uk-totop" uk-totop uk-scroll>ToTop</a>
+		<div uk-alert>
+			<h4>Controller - index() method</h4>
 		</div>
-	</div>
-	<div class="uk-container uk-padding">
-		<h3 id="test" class="uk-h3">Test</h3>
 		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
+			The link calls a regular controller named <code>Projects.php</code> wich is located at <code>/application/controllers/pages/</code>.
+			This is a regular page call in Codeigniter, no method, so index() is called.
 		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-	</div>
-</div>
 
-<div class="uk-section uk-padding-remove">
-	<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-navbar-transparent; cls-inactive: uk-navbar-transparent uk-light; bottom: #offset">
-		<div class="uk-background-secondary">
-			<div class="uk-container uk-light">
-				<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-					<div class="uk-navbar-left">
-						<ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
-							<li><a href="#template">Template Library</a></li>
-							<li><a href="#test3">Codeigniter Changes</a></li>
-							<li><a href="#test4">Test</a></li>
-						</ul>
-					</div>
-				</nav>
+		<p>
+			<a href="<?php echo base_url('projects') ?>" class="uk-button uk-button-danger uk-margin-small">Projects</a>
+		</p>
+
+		<div uk-alert>
+			<h4>Controller - design() method</h4>
+		</div>
+		<p>
+			The link calls a regular controller named <code>Projects.php</code> wich is located at <code>/application/controllers/pages/</code>.
+			This is a regular page call in Codeigniter, method /design, so design() is called.
+		</p>
+		<p>
+			<a href="<?php echo base_url('projects/design') ?>" class="uk-button uk-button-danger uk-margin-small">Design</a>
+		</p>
+
+		<p class="uk-text-lead">Now we try the magic part:</p>
+
+		<div uk-alert>
+			<h4>Controller - with unique Uri</h4>
+		</div>
+		<p>Imagine, your website has a showcase. A SEO friendly url could be <code>http://yourdomain/showcase/design/logo/client_1</code></p>
+		<p>
+			We don't have a controller, module or whatever called "logo". There are no nested Controller directories, all Controllers are located at
+			<code>/application/controllers/pages/</code>. The only thing we need is a Controller called "Client_1".</p>
+		<p>
+			<a href="<?php echo base_url('showcase/design/logo/client_1') ?>" class="uk-button uk-button-danger uk-margin-small">Client 1</a>
+		</p>
+
+		<div class="uk-container uk-background-secondary uk-light">
+			<div class="uk-padding-small">
+				<h4>What is the advantage?</h4>
+				<p class="uk-text-lead">
+					Very easy. You are now able to create SEO friendly Urls with a proper Navigation and you don't have to care about Controller locations.
+					Put the Controller you need in your <code>/application/controllers/pages/</code> folder and you're done.
+				</p>
 			</div>
 		</div>
+
+		<div uk-alert>
+			<h4>Controller - logo_1() method - with unique Uri</h4>
+		</div>
+		<p>
+			Same example like before, we don't have a controller, module or whatever called "logo". There are no nested Controller directories, all Controllers are located at
+			<code>/application/controllers/pages/</code>. The only thing we need is a Controller called "Client_1" and the method "logo_1".</p>
+		<p>
+		<p>
+			<a href="<?php echo base_url('showcase/design/logo/client_1/logo_1') ?>" class="uk-button uk-button-danger uk-margin-small">Client 1 / Logo 1</a>
+		</p>
+
 	</div>
 </div>
 
-<div class="uk-section">
+<div id="modules" class="uk-section uk-padding-remove">
 	<div class="uk-container uk-padding">
-		<h3 id="template">Introduction</h3>
+		<h2>Call a Module Controller</h2>
+
+		<div uk-alert>
+			<h4>Module - index() method</h4>
+		</div>
 		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
+			<a href="<?php echo base_url('services') ?>" class="uk-button uk-button-default uk-margin-small">Services</a>
 		</p>
+
+		<div uk-alert>
+			<h4>Module - design() method</h4>
+		</div>
 		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
+			<a href="<?php echo base_url('services/design') ?>" class="uk-button uk-button-default uk-margin-small">Design</a>
 		</p>
+
+		<div uk-alert>
+			<h4>Module - design() method</h4>
+		</div>
 		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
+			<a href="<?php echo base_url('/showcase/services/print') ?>" class="uk-button uk-button-default uk-margin-small">Print</a>
 		</p>
 	</div>
+</div>
+
+<div id="database" class="uk-section uk-padding-remove">
 	<div class="uk-container uk-padding">
-		<h3 id="test3" class="uk-h3">Codeigniter Changes</h3>
+		<h2>Call a Dynamic Website</h2>
+
+		<div uk-alert>
+			<h4>About</h4>
+		</div>
 		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
+			We don't have a controller "about" and we don't have a Module "about". This Page will be routed automatically
+			to your Module "Pages". In this Module a database call could check if the page exist and could load
+			the content from a database. You can load the content from a view file too, but than the file has to exist.
+		<p>
+			<a href="<?php echo base_url('about') ?>" class="uk-button uk-button-default uk-margin-small">About</a>
 		</p>
+
+		<div uk-alert>
+			<h4>About</h4>
+		</div>
 		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
+			Same as before, but this time we simulate a SEO friendly Url.
+		<p>
+			<a href="<?php echo base_url('info/internal/about') ?>" class="uk-button uk-button-default uk-margin-small">About</a>
 		</p>
+
+		<div uk-alert>
+			<h4>404</h4>
+		</div>
 		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
+			<a href="<?php echo base_url('donaldduck') ?>" class="uk-button uk-button-default uk-margin-small">Donald Duck</a>
 		</p>
+
+		<div uk-alert>
+			<h4>Module - design() method</h4>
+		</div>
 		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-	</div>
-	<div class="uk-container uk-padding">
-		<h3 id="test4" class="uk-h3">Test</h3>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
-		</p>
-		<p>
-			Dolor ut eiusmod pariatur nostrud labore aute adipisicing occaecat fugiat
-			proident et. Et aliquip elit occaecat dolor incididunt officia id voluptate
-			ex deserunt in elit enim excepteur tempor nostrud anim. Elit pariatur
-			reprehenderit ullamco ipsum ea qui eiusmod consequat excepteur sunt
-			cillum aute ex id. Dolor irure officia ad exercitation voluptate
-			consequat exercitation ad.
+			<a href="<?php echo base_url('/showcase/services/print') ?>" class="uk-button uk-button-default uk-margin-small">Print</a>
 		</p>
 	</div>
 </div>

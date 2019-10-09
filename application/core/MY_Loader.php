@@ -74,7 +74,7 @@ class MY_Loader extends CI_Loader
      * @return	void
      */
     public function controller($uri, $params = array(), $return = FALSE) {
-        // No valid module detected, add current module to uri
+        //--> No valid module detected, add current module to uri
         list($module) = $this->detect_module($uri);
 
         if (!isset($module))
@@ -86,13 +86,13 @@ class MY_Loader extends CI_Loader
             }
         }
 
-        // Add module
+        //--> Add module
         $this->add_module($module);
 
-        // Execute the controller method and capture output
+        //--> Execute the controller method and capture output
         $void = $this->_load_controller($uri, $params, $return);
 
-        // Remove module
+        //--> Remove module
         $this->remove_module();
 
         return $void;
@@ -118,24 +118,21 @@ class MY_Loader extends CI_Loader
             return;
         }
 
-        // Detect module
+        //--> Detect module
         if (list($module, $class) = $this->detect_module($library))
 		{
-			//echo 'Library: '.$library.'<br>';
-			//echo 'Module: '.$module.'<br>';
-            // Module already loaded
+            //--> Module already loaded
             if (in_array($module, $this->_ci_modules)) {
                 return parent::library($class, $params, $object_name);
             }
 
-            // Add module
+            //--> Add module
             $this->add_module($module);
 
-            // Let parent do the heavy work
-            //echo 'Class: '.$class.'<br>';
+            //--> Let parent do the heavy work
             $void = parent::library($class, $params, $object_name);
 
-            // Remove module
+            //--> Remove module
             $this->remove_module();
 
             return $void;

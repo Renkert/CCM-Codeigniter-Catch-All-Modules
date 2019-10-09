@@ -197,7 +197,7 @@ class MY_Router extends CI_Router
             }
 
             //--> Does a module exist? (/modules/xyz/controllers/)
-            if (is_dir($source = $location . $module . '/controllers/'))
+            if (is_dir( $source = $location . $module . '/controllers/') )
 			{
                 $this->module 		= $module;
                 $this->directory 	= $relative . $module . '/controllers/';
