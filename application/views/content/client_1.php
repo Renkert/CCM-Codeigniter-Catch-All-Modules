@@ -75,6 +75,6 @@
 		</table>
 	</div>
 	<div class="uk-container uk-padding">
-		<a href="<?php echo base_url('tests') ?>" class="uk-button uk-button-default uk-margin-small"><span data-uk-icon="icon: chevron-double-left"></span>BACK TO TESTS</a>
+		<a href="<?php echo base_url('showcase') ?>" class="uk-button uk-button-default uk-margin-small"><span data-uk-icon="icon: chevron-double-left"></span>BACK TO SHOWCASE</a>
 	</div>
 </div>

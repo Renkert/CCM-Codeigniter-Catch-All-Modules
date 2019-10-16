@@ -2,8 +2,8 @@
 	<div class="uk-navbar-container">
 		<nav uk-navbar="" class="uk-navbar">
 			<div class="uk-navbar-left">
-				<a class="uk-navbar-item uk-logo" href="https://demo.yootheme.com/themes/wordpress/2016/max">
-					<img alt="Max" src="/themes/wordpress/2016/max/wp-content/uploads/logo.svg">
+				<a class="uk-navbar-item uk-logo" href="#">
+					<img alt="Max" src="<?php echo asset_url('img/logo-white.svg'); ?>">
 				</a>
 			</div>
 
@@ -27,18 +27,18 @@
 									<a href="<?php echo base_url(); ?>">Home</a>
 								</li>
 								<li>
-									<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=13">Work</a>
+									<a href="#">Work</a>
 								</li>
-								<li><a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=18">Branding</a></li>
-								<li><a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=14">About</a></li>
-								<li><a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=15">Services</a></li>
-								<li><a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=66">Blog</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#6">Blog</a></li>
 								<li class="uk-parent">
-									<a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=158">Shop</a>
-									<ul class="uk-nav-sub" style="display: none;">
-										<li><a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=159">Cart</a>
+									<a href="#8">Shop</a>
+									<ul class="uk-nav-sub">
+										<li><a href="#9">Cart</a>
 										</li>
-										<li><a href="https://demo.yootheme.com/themes/wordpress/2016/max/?page_id=161">My account</a>
+										<li><a href="#">My account</a>
 										</li>
 									</ul>
 								</li>

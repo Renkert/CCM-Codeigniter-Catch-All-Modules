@@ -104,24 +104,30 @@
 		<h2>Call a Module Controller</h2>
 
 		<div uk-alert>
-			<h4>Module - index() method</h4>
+			<h4>Module [ services ] - Controller [ Services.php ] - Method [ index() ]</h4>
 		</div>
 		<p>
 			<a href="<?php echo base_url('services') ?>" class="uk-button uk-button-default uk-margin-small">Services</a>
 		</p>
 
 		<div uk-alert>
-			<h4>Module - design() method</h4>
+			<h4>Module [ services ] - Controller [ Services.php ] - Method [ design() ]</h4>
 		</div>
 		<p>
 			<a href="<?php echo base_url('services/design') ?>" class="uk-button uk-button-default uk-margin-small">Design</a>
 		</p>
 
 		<div uk-alert>
-			<h4>Module - design() method</h4>
+			<h4>Module [ services ] - Controller [ Printwork.php ] - Method [ index() ]</h4>
 		</div>
 		<p>
-			<a href="<?php echo base_url('/showcase/services/print') ?>" class="uk-button uk-button-default uk-margin-small">Print</a>
+			<a href="<?php echo base_url('services/printwork') ?>" class="uk-button uk-button-default uk-margin-small">Printwork</a>
+		</p>
+		<div uk-alert>
+			<h4>Module [ services ] - Controller [ Printwork.php ] - Method [ vcards() ]</h4>
+		</div>
+		<p>
+			<a href="<?php echo base_url('services/printwork/vcards') ?>" class="uk-button uk-button-default uk-margin-small">Vcards</a>
 		</p>
 	</div>
 </div>

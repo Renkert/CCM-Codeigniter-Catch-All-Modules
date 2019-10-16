@@ -49,6 +49,10 @@
 				<td><code><?php echo $this->uri->uri_string(); ?></code></td>
 			</tr>
 			<tr>
+				<td>View File is located at:</td>
+				<td><code>'application/views/content/<?php echo $this->uri->uri_string(); ?>'</code></td>
+			</tr>
+			<tr>
 				<td>Segment 0:</td>
 				<td><code><?php echo !empty($this->uri->segment(0)) ? $this->uri->segment(0) : 'empty';?></code></td>
 			</tr>
@@ -75,6 +79,6 @@
 		</table>
 	</div>
 	<div class="uk-container uk-padding">
-		<a href="<?php echo base_url('tests') ?>" class="uk-button uk-button-default uk-margin-small"><span data-uk-icon="icon: chevron-double-left"></span>BACK TO TESTS</a>
+		<a href="<?php echo base_url('showcase') ?>" class="uk-button uk-button-default uk-margin-small"><span data-uk-icon="icon: chevron-double-left"></span>BACK TO SHOWCASE</a>
 	</div>
 </div>

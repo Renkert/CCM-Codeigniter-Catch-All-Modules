@@ -22,7 +22,7 @@ class Showcase extends MY_Controller
 
 	public function index()
 	{
-		$this->template->render('tests');
+		$this->template->render('showcase');
 	}
 
 }

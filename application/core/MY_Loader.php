@@ -98,6 +98,19 @@ class MY_Loader extends CI_Loader
         return $void;
     }
 
+	public function new_controller( $uri, $params = array() )
+	{
+        $file_path 		= APPPATH.'controllers/' . $uri . '.php';
+        $object_name 	= $file_path;
+        $class_name 	= ucfirst($file_path);
+		$return 		= FALSE;
+
+
+		$void = $this->_load_controller($uri, $params, $return);
+		return $void;
+
+    }
+
     /**
      * Class Loader
      *

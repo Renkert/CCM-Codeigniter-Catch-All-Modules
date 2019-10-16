@@ -337,8 +337,8 @@ class MY_Router extends CI_Router
             }
 
             // try to locate default controller in modules
-            if ($located = $this->locate(array($class, $class, $method))) {
-
+            if ($located = $this->locate(array($class, $class, $method)))
+			{
                 log_message('debug', 'No URI present. Default module controller set.');
             }
         }

@@ -17,9 +17,8 @@
 
 
 
-class Services extends MY_Controller
+class Printwork extends MY_Controller
 {
-
 	public function __construct()
 	{
 		parent::__construct();
@@ -29,22 +28,14 @@ class Services extends MY_Controller
 	{
 		$data['dir']			= __DIR__;
 		$data['view_file']		= VIEWPATH .'/';
-		$this->template->render('services', NULL, $data);
+		$this->template->render('print', NULL, $data);
 	}
 
-	public function design()
-	{
-		$data['dir']			= __DIR__;
-		$data['view_file']		= VIEWPATH .'/';
-		$this->template->render('design', NULL, $data);
-	}
-
-	/*
-	public function print()
+	public function vcards()
 	{
 		$data['dir']			= __DIR__;
 		$data['view_file']		= VIEWPATH .'/';
 		$this->template->render('print', NULL, $data);
 	}
-	*/
+
 }

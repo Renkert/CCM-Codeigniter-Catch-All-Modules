@@ -21,12 +21,18 @@ class Pages extends MY_Controller
 {
 
 	public $_pages 	= array('about', 'info/internal/about', 'privacy_policy', 'careers', 'careers/london/designer');
+	public $previous_page;
 
 
 
 	public function __construct()
 	{
 		parent::__construct();
+
+		if (!class_exists('CI_Session')) {
+			$this->load->library('session');
+		}
+		$this->previous_page = $this->session->userdata('previous_page');
 	}
 
 
@@ -70,6 +76,7 @@ class Pages extends MY_Controller
 		//--> I simulate a database call at this moment
 		$page 			= in_array( $original_uri , $this->_pages) ? $original_uri : '';
 
+		//echo $page;
 		//$page 			= $this->pages_model->find_by('uri', $original_uri);
 
 		if(	isset($page) && !empty($page) ) {

@@ -23,9 +23,10 @@ class MY_Controller extends CI_Controller
 	// --- CONSTRUCTOR ---------------------------------------------------------
 	public function __construct()
     {
-
 		// --- LOGFILE ---------------------------------------------------------
 		log_message('info', "MY_Controller -> Initialized");
         parent::__construct();
 	}
+
+
 }

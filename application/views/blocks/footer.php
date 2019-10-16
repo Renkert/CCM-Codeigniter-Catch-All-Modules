@@ -5,9 +5,7 @@
 
 					<div class="uk-flex-auto uk-width-1-4@l uk-width-1-2@m uk-first-column">
 						<div class="uk-margin">
-							<a class="el-link" href="/themes/wordpress/2016/max/index.php">
-								<img class="el-image" alt="" data-src="/themes/wordpress/2016/max/wp-content/uploads/logo-footer.svg" uk-img="">
-							</a>
+							<a href="<?php echo base_url(); ?>">Start</a>
 						</div>
 					</div>
 
