@@ -20,9 +20,38 @@
 class Tests extends MY_Controller
 {
 
-	public function index()
+	public function __construct()
 	{
-		$this->template->render('tests');
+		parent::__construct();
+	}
+
+
+	/**
+	 * Catch all requests to this page in one mega-function.
+	 *
+	 * @param string $method The method to call.
+	 */
+	public function _remap($method)
+	{
+		//-> This page has been routed to with pages/view/whatever
+		if ($this->uri->rsegment(1, '').'/'.$method == 'pages/view')
+		{
+			$url_segments = $this->uri->total_rsegments() > 0 ? array_slice($this->uri->rsegment_array(), 2) : null;
+		}
+		// not routed, so use the actual URI segments
+		else
+		{
+			$url_segments = $this->uri->total_segments() > 0 ? $this->uri->segment_array() : null;
+		}
+
+		$this->test_me($url_segments);
+	}
+
+
+
+	public function test_me( $url_segments )
+	{
+		print_array($url_segments);
 	}
 
 }

@@ -72,7 +72,7 @@
 								<a href="<?php echo base_url('docs'); ?>">Docs</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url('controller'); ?>">Controller</a>
+								<a href="<?php echo base_url('showcase'); ?>">Showcase</a>
 							</li>
 							<li>
 								<a href="<?php echo base_url('tests'); ?>">Tests</a>

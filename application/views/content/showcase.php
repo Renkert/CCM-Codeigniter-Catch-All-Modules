@@ -7,7 +7,7 @@
 
     				<h1 class="uk-h1 uk-width-xlarge">Tests.</h1>
 					<div class="uk-text-lead uk-width-xlarge">
-						Littel space for some Tests.
+						The showcase how it works.
 					</div>
     			</div>
 			</div>

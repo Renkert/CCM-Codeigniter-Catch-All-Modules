@@ -175,7 +175,6 @@ class MY_Router extends CI_Router
      */
     function locate($segments)
 	{
-
         list($module, $directory, $controller) = array_pad($segments, 3, NULL);
 
         foreach ($this->config->item('modules_locations') as $location)
